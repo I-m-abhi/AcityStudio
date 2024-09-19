@@ -11,21 +11,50 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 // Importing React Libraries
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
+
+const AppLayout = () => (
+  <>
+    <Header />
+    <Outlet />
+  </>
+);
 
 function App() {
+  
+  const appRouter = createBrowserRouter([
+    {
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/projects",
+          element: <Projects />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    }
+  ])
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
+    <div className='App'>
+      <RouterProvider router={appRouter} />
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 

@@ -204,16 +204,6 @@
     }
   }
 
-  .team-section {
-    & .grid {
-      & .team-leader {
-        & .team-image {
-          width: 100%;
-        }
-      }
-    }
-  }
-
   /* Services-Section */
   .creative-section {
     & .creative-services {
@@ -286,6 +276,7 @@
     & .container {
       & .popup-form {
         width: 100%;
+        padding: 2.4rem;
       }
     }
   }

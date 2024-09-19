@@ -4,12 +4,12 @@ const Hero = () => {
     <div className="hero-section">
       <div className="container">
         <div className="main-heading">
-          <h1>Dreams made into Reality</h1>
-          <p>Interiors are the essential settings of life, shaping how people  <br />
-            work, play and learn
+          <h1>Dreams Made into Reality</h1>
+          <p>Together we ensure that each building fulfills their needs and <br />
+            goals, as unique manifestations of brand, mission and values...
           </p>
-          <p>Together we ensure thateach building fulfills theirneeds and <br />
-            goals, as unique manifestations of brand, mission and values
+          <p>Interiors are the essential settings of life, shaping how people  <br />
+            work, play and learn...
           </p>
           <a href="https://wa.me/919205001994" target='_blank' rel="noreferrer"><button className="whatsapp-btn"><i className="fa-brands fa-whatsapp"></i>Whatsapp now</button></a>
         </div>
@@ -26,7 +26,7 @@ const Hero = () => {
             </fieldset>
             <fieldset>
               <legend>Property Details*</legend>
-              <input type="text" name="Msg" placeholder="Tell us your Requirements" required/>
+              <textarea name="Msg" placeholder="Tell us your Requirements" required></textarea>
             </fieldset>
             <button className="form-btn">GET FREE QUOTE</button>
           </form>

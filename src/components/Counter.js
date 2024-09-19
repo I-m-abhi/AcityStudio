@@ -13,7 +13,7 @@ const Counter = () => {
             <p>Certified Engineers</p>
           </div>
           <div>
-            <p>250+</p>
+            <p>150+</p>
             <p>Happy Clients</p>
           </div>
           <div>

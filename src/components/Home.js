@@ -104,7 +104,7 @@ const Home = () => {
       {/* Home Service */}
       <section className="main-service">
         <h2>A FORCE FOR ACTIVATING CITIES AND REENERGIZING CULTURES</h2>
-        <button className='btn'>View More Services</button>
+        <button className='btn'><Link to='/services' className="btn-service-link">View More Services</Link></button>
         <div className="service-list grid grid-three-col">
           {serviceList.map((item, id) => {
             return (

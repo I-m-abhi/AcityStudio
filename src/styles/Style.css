@@ -84,10 +84,10 @@
 
 /* Hero-Section */
 .hero-section {
-  background-image: url('../constants/Images/Background/Untitled design.png');
+  background-image: url('../constants/Images/Background/hero-bg.webp');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 85vh;
+  height: 100vh;
 
   & .container {
     display: flex;
@@ -95,6 +95,9 @@
     align-items: center;
 
     & .main-heading {
+      & h1 {
+        font-size: 3.4rem;
+      }
       & p {
         margin-top: 1.4rem;
         color: var(--gold);
@@ -122,8 +125,8 @@
     }
 
     & .popup-form {
-      width: 40%;
-      padding: 5rem;
+      width: 37%;
+      padding: 2.5rem 4rem;
       background-color: black;
       z-index: 9;
       border-radius: 1.5rem;
@@ -134,20 +137,21 @@
       }
 
       & form {
-        padding: 2.4rem 0 0;
+        padding: 2.4rem 0;
         display: flex;
         flex-direction: column;
         gap: 2.4rem;
 
         & fieldset {
           border: .1rem solid var(--gold);
+          border-radius: 1.4rem;
 
           & legend {
-            margin-left: 1.4rem;
+            margin-left: 1.7rem;
             color: var(--gold);
           }
 
-          & input {
+          & input, textarea {
             background-color: transparent;
             border: none;
             outline: none;
@@ -188,7 +192,7 @@
   }
 
   & h2 {
-    padding-top: 3.4rem;
+    padding-top: 4.4rem;
     color: green;
     margin-bottom: 0;
   }
@@ -207,6 +211,7 @@
         font-size: 8rem;
         padding: 5.4rem;
         border: 1rem solid var(--gold);
+        border-radius: 1.4rem;
         border-right: none;
       }
     }
@@ -231,6 +236,9 @@
   & .btn,
   h2 {
     z-index: 9;
+  }
+  & .btn-service-link {
+    color: white;
   }
 
   &::before {
@@ -282,8 +290,6 @@
 
 /* Home-Page */
 .video-section {
-  padding: 2.4rem 0 0;
-
   & .video {
     width: 100%;
   }
@@ -298,6 +304,7 @@
     & .about-img {
       & img {
         width: 75%;
+        border-radius: 1.4rem;
       }
     }
 
@@ -307,6 +314,7 @@
       padding: 5rem 6.4rem;
       position: absolute;
       left: 50rem;
+      border-radius: 1.4rem;
 
       & p {
         margin-top: 2.4rem;
@@ -451,32 +459,6 @@
       & .founder-img {
         width: 28rem;
         height: 32rem;
-      }
-    }
-  }
-}
-
-.team-section {
-  & .grid {
-    place-items: center;
-    gap: 1.4rem;
-
-    & .team-leader {
-      text-align: center;
-
-      & .team-image {
-        width: 28rem;
-        height: 32rem;
-      }
-
-      & h4 {
-        margin-top: 1rem;
-        word-spacing: .2rem;
-        letter-spacing: .1rem;
-      }
-
-      & p {
-        font-size: 1.3rem;
       }
     }
   }

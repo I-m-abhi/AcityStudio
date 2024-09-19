@@ -1,43 +1,10 @@
 import { Link } from 'react-router-dom';
 import { teamSkilled } from '../constants/constant';
 import imageContent from '../constants/Images/Web img/about-2.webp'
-import tm1 from '../constants/Images/TeamMember/1.webp';
 import tm2 from '../constants/Images/TeamMember/2.webp';
-import tm3 from '../constants/Images/TeamMember/3.webp';
-import tm4 from '../constants/Images/TeamMember/4.webp';
-import tm5 from '../constants/Images/TeamMember/5.webp';
-import tm6 from '../constants/Images/TeamMember/6.webp';
 import MiniContact from './MiniContact';
 
 const About = () => {
-  const teamMember = [
-    {
-      img: tm3,
-      name: 'JYOTIKA SHARMA',
-      post: 'Head Business Development',
-    },
-    {
-      img: tm4,
-      name: 'HEMANTH SINGH',
-      post: 'Urban Planner',
-    },
-    {
-      img: tm1,
-      name: 'VRINDA AGARWAL',
-      post: 'Assistant Architect',
-    },
-    {
-      img: tm5,
-      name: 'Arshjot',
-      post: 'Interior Designer',
-    },
-    {
-      img: tm6,
-      name: 'Harpreet Singh',
-      post: 'Business Development Manager',
-    },
-  ];
-
   return (
     <>
       <section className="page-title">
@@ -108,21 +75,6 @@ const About = () => {
           <div className="founder-text">
             <p>Hello, I am the Founder Architect of the design firm AcityStudio, which is affiliated with the Council of Architecture, Indian BIM Forum and Association of Designers of India. Upase believes that architectural design should be always people-centric. The firm designs residential, institutional and commercial spaces ranging from 500 – 1,00,000+ Sq ft building footprint area with economical and innovative thoughtful architectural solutions in adherence to Vaastu principles, offering urban planning, architectural and interior design solutions. Ar Sawan Kumar is open to work for oversea projects for architectural design and BIM-related services and also provides architectural design and execution of works. The firm, AcityStudio, has expertise in BIM (architectural and MEP Revit) outsourcing services too.</p>
           </div>
-        </div>
-      </section>
-      {/* Main Team */}
-      <section className="team-section container">
-        <h2>A PRISM OF PERSPECTIVES, PASSIONS AND TALENTS.</h2>
-        <div className="expert grid grid-four-col">
-          {teamMember.map((data, id) => {
-            return (
-              <div key={id} className="team-leader">
-                <img className='team-image' src={data.img} alt="team-leader" />
-                <h4>{data.name}</h4>
-                <p>{data.post}</p>
-              </div>
-            )
-          })}
         </div>
       </section>
       <MiniContact />
