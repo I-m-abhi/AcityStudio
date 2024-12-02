@@ -253,7 +253,7 @@
 
 @media (max-width: 710px) {
   .container {
-    padding: 8.4rem 4.4rem;
+    padding: 8.4rem 3.4rem;
   }
 
   .grid-four-col {
@@ -285,6 +285,10 @@
     & .home-about {
       & .about-img {
         height: 100%;
+
+        & img {
+          width: 100%;
+        }
       }
     }
   }

@@ -143,12 +143,13 @@
         gap: 2.4rem;
 
         & fieldset {
-          border: .1rem solid var(--gold);
+          border: .1rem solid rgb(201, 179, 54);
           border-radius: 1.4rem;
 
           & legend {
             margin-left: 1.7rem;
-            color: var(--gold);
+            color: rgb(201, 179, 54);
+            padding: 0 .7rem;
           }
 
           & input, textarea {
